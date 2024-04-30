@@ -2,6 +2,7 @@ public class Client {
     public static void main(String[] args) {
         Furniture chair = new Chair();
         Furniture sofa = new Sofa();
+        Furniture table = new Table();
 
         ShippingCostVisitor flatRateVisitor = new FlatRateShippingCostVisitor();
         ShippingCostVisitor distanceBasedVisitor = new DistanceBasedShippingCostVisitor(100);
@@ -11,5 +12,8 @@ public class Client {
 
         sofa.accept(flatRateVisitor);
         sofa.accept(distanceBasedVisitor);
+
+        talbe.accept(flatRateVisitor);
+        table.accept(distanceBasedVisitor);
     }
 }
