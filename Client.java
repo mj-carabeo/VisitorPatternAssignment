@@ -13,7 +13,7 @@ public class Client {
         sofa.accept(flatRateVisitor);
         sofa.accept(distanceBasedVisitor);
 
-        talbe.accept(flatRateVisitor);
+        table.accept(flatRateVisitor);
         table.accept(distanceBasedVisitor);
     }
 }
