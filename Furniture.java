@@ -14,4 +14,9 @@ public class Sofa implements Furniture {
     public void accept(ShippingCostVisitor visitor) {
         visitor.visit(this);
     }
+
+public class Table implements Furniture {
+    @Override
+    public void accept(ShippingCostVisitor visitor) {
+        visitor.visit(this);
 }
